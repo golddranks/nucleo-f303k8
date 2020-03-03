@@ -1,0 +1,19 @@
+[package]
+authors = ["Pyry Kontio <pyry.kontio@drasa.eu>"]
+categories = ["embedded", "no-std"]
+description = "Board support crate for the STM32 Nucleo-F303K8 microcontroller board"
+documentation = "https://docs.rs/crate/nucleo-f303k8"
+edition = "2018"
+keywords = ["arm", "cortex-m", "template"]
+license = "0BSD"
+name = "nucleo-f303k8"
+repository = "https://github.com/stm32-rs/nucleo-f303k8"
+version = "0.1.0"
+readme = "README.md"
+
+[dependencies]
+bare-metal = "0.2.5"
+cortex-m = "0.6.2"
+cortex-m-rt = "0.6.12"
+embedded-hal = { version = "0.2.3", features = ["unproven"] }
+stm32f3xx-hal = { version = "0.4.0", features = ["stm32f303", "rt"] }
